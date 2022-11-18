@@ -7,7 +7,7 @@ Segundo proyecto en Flutter
 Esta aplicación permite escoger el producto agregando la unidades deseadas, luego podra ver en otra pesataña los valores subtotales y totales, al igual que el boton de gestionar compra.
 
 ## DEMO
-![Demo](/img/CarritoCompras "tipo de moneda")
+![Demo](/img/CarritoCompras.gif "tipo de moneda")
 
 ## INSTALACIÓN
 
