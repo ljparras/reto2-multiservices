@@ -15,7 +15,23 @@ class control_general extends GetxController{
     super.onInit();
   }
 
+  void cambiarcantidad(int posicionMenu, int nuevacantidad){
+    prod[posicionMenu].cantidad = nuevacantidad;
+  }
 
+  int totalpagar(){
+    int total = 0;
+    for (var i = 0; i < prod.length; i++) {
+      total = total + prod[i].cantidad * prod[i].precio;
+    }
+    return total;
+  }
+
+  void comprarr(){
+    for (var i = 0; i < prod.length; i++) {
+      prod[i].cantidad = 0;
+    }
+  }
 
   void cambioMenu (int x){
     _posicionMenu.value = x;

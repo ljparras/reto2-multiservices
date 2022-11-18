@@ -10,8 +10,7 @@ class pag2_tienda extends StatefulWidget {
 }
 
 class _pag2_tiendaState extends State<pag2_tienda> {
-
-control_general control = Get.find();
+  control_general control = Get.find();
 
 
   @override
@@ -24,6 +23,28 @@ control_general control = Get.find();
             leading: Image(image: NetworkImage(control.prod[index].iamgen),),
             title:  Text(control.prod[index].Nombre+ " | " + control.prod[index].precio.toString()),
             trailing: Text(control.prod[index].cantidad.toString()),
+            subtitle: Row(
+              children: [
+                IconButton(
+                  onPressed: (){
+                    int nuevacantidad=control.prod[index].cantidad + 1;
+                    control.cambiarcantidad(index, nuevacantidad);
+                    control.prod.refresh();
+                  }, 
+                  icon: Icon(Icons.arrow_circle_up),
+                ),
+            VerticalDivider(), 
+            IconButton(
+              onPressed: () {
+                int nuevacantidad=control.prod[index].cantidad - 1;
+                if (nuevacantidad < 0){
+                  nuevacantidad = 0;
+                }
+                    control.cambiarcantidad(index, nuevacantidad);
+                    control.prod.refresh();
+              }, 
+              icon: Icon(Icons.arrow_circle_down))
+            ]),
             );
         },
       ),

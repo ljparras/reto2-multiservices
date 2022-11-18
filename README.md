@@ -1,16 +1,23 @@
-# multiservices
+# RETO 2
 
-A new Flutter project.
+Segundo proyecto en Flutter
 
-## Getting Started
+## CARRITO DE COMPRAS
 
-This project is a starting point for a Flutter application.
+Esta aplicación permite escoger el producto agregando la unidades deseadas, luego podra ver en otra pesataña los valores subtotales y totales, al igual que el boton de gestionar compra.
 
-A few resources to get you started if this is your first Flutter project:
+## DEMO
+![Demo](/img/CarritoCompras "tipo de moneda")
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## INSTALACIÓN
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Ingresa al repositorio [Carrito de compras](https://github.com/VivBB/Cambio_Divisas.git)
+2. Abre la carpeta con Visual Studio Code
+3. Selecciona "Get packages" en el recuadro a mano derecha abajo.
+4. Corre el ambiente local.
+5. Ingresa al menu vertical, y selecciona tienda. 
+6. Agrega la cantidad de productos que deseas comprar
+7. Ingresa a la seccion Prodcutos, alli encontrara el sutotal, y total de los productos solicitados.
+
+
+
